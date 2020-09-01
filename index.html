@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Check list</title>
+</head>
+<body>
+	<!-- <div class="overlay" id="overlay"></div> -->
+	<div class="all" id="all" style="display: none">
+		<input id="text-add" type="text" placeholder="Add">
+		<div class="cont" id="cont">
+			<!-- <div class="check-text">
+				<div class="check" style="background-color:white"></div>
+				<input type="text" class="text-item" id="text-item" placeholder="text">
+				<div class="delete"></div>
+			</div> -->
+		</div>
+		
+		<button id="btn-task" onclick="addNewTask()">add task</button>
+		<button id="btn-cancle" onclick="proveraCancle()">Cancel</button>
+		<button id="btn-finish" onclick="proveraItema()">Finish</button>
+	</div>
+	<div class="container">
+		<div class="top-page" id="top-page">
+			<div class="time">
+				<p id="vreme" onload="updateTime()"></p>
+				<p id="dan" ></p>
+				<p id="datum" onload="updateDay()"></p>
+			</div>
+		</div>
+		<div class="add" id="add" onclick="addDiv('flex'); addPro()">
+			ADD
+		</div>
+		<div class="page" id="page">
+			<!-- <div class="item">
+				kontakt 
+				<div id="touch"></div>
+				<button id="delete-item" ></button>
+				<div class="progres"></div>
+			</div> -->
+			<div class="bottom-div"></div>
+		</div>
+	</div>
+	<script src="app.js"></script>
+</body>
+</html>

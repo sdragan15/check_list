@@ -1,0 +1,340 @@
+*{
+	box-sizing: border-box;
+	font-family: 'Oxygen', sans-serif;
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+}
+
+.top-page{
+	top: 0px;
+	position: fixed;
+	/*background-color: red;*/
+	background-image: url('images/bac1.jpg'); 
+	width: 100%;
+	height: 50vh;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: cover
+
+
+}
+
+.page{
+	display: flex;
+	flex-wrap: wrap;
+	flex-grow: 1;
+	position: relative;
+	margin-top: 50vh;
+	padding-top: 20px;
+	height: 100%;
+	width: 100%;
+	background: rgb(255,255,255);
+	/*background: linear-gradient(0deg, rgba(255,255,255,1) 90%, rgba(253,187,45,0) 100%);*/
+	/*border:solid;*/
+	justify-content: space-around;
+	border-top: solid 5px;
+	padding-bottom: 60px;
+}
+
+.add{
+	position: fixed;
+	height: 30px;
+	width: 100px;
+	border-radius: 20px;
+	border: solid 1px;
+	bottom: 10px;
+	z-index: 29;
+	line-height: 28px;
+	text-align: center;
+	font-size: 16px;
+	/*background-color: black;*/
+	transition: all 0.3s ease;
+}
+
+.btn{
+	position: fixed;
+	top:20px;
+	width: 40px;
+	height: 40px;
+	/*background-color: red;*/
+}
+
+
+#btn-right{
+	right: 10vw;
+	font-size: 30px;
+}
+
+.time{
+	width: 90%;
+	height: 80%;
+	/*border: solid 1px;*/
+	color: white;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.time p{
+	text-shadow: 2px 2px 2px black;
+}
+
+.time p:first-child{
+	font-size: 60px;
+	margin-bottom: 0px;
+}
+
+.time p:nth-of-type(2){
+	font-size: 20px;
+	margin-bottom: 0px;
+}
+
+.time p:nth-of-type(3){
+	margin-top: 10px;
+	font-size: 30px;
+}
+
+.bottom-div{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	background-color: white;
+	z-index: 28;
+	border-top: solid 1px;
+}
+
+.item{
+	position: relative;
+	width: 90%;
+	height: 100px;
+	border:solid 1px rgb(0,0,0,0.5);
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	padding: 20px;
+	padding-right: 50px;
+	padding-left: 50px;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 10px;
+	box-shadow: 2px 2px 5px;
+}
+
+.progres{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+	height: 5px;
+	/*border: solid;*/
+	background-color: rgb(0,0,0,0.5);
+}
+
+.all{
+	display: flex;
+	/*display: none;*/
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: flex-start;
+	box-sizing: border-box;
+	position: absolute;
+	width: 95vw;
+	/*height: 100%;*/
+	background-color: red;
+	z-index: 30;
+	/*margin: 10px;*/
+	margin-left: 2.5vw;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding: 10px;
+	box-shadow: 2px 2px 10px;
+	/*background-color: red;*/
+	background: rgb(255,255,255,0.9);
+	/*background: radial-gradient(circle, rgba(255,255,255,0.6306897759103641) 88%, rgba(255,255,255,0) 93%);*/
+}
+
+.check-text{
+	margin-top: 5px;
+	display: flex;
+	position: relative;
+	width: 100%;
+	height: 40px;
+	background-color: white;
+	box-shadow: 2px 2px 5px rgb(0,0,0,0.4);
+	/*border: solid 1px rgb(0,0,0,0.3);*/
+}
+
+#touch{
+	position: absolute;
+	width: 90%;
+	height: 100%;
+	/*border: solid;*/
+	top: 0;
+	left: 0;
+	z-index: 25;
+	/*background-color: red;*/
+}
+
+#delete-item{
+	z-index: 25;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	margin: 10px;
+	width: 25px;
+	height: 25px;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	background-image: url('images/trash.jpg');
+	background-size: 30px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.check{
+	flex-wrap: 0;
+	width: 20px;
+	height: 20px;
+	/*border: solid;*/
+	border: solid 1px;
+	border-radius: 10px;
+	margin: 10px;
+	background-color: white;
+}
+
+
+.text-item{
+	font-size: 16px;
+	/*left: 10%;*/
+	flex-grow: 1;
+	height: 40px;
+	/*border:solid;*/
+	line-height: 35px;
+	padding-left: 10px;
+	padding-right: 10px;
+	outline: none;
+	border: none;
+	/*border-bottom: solid 1px rgb(0,0,0,0.3);*/
+}
+
+.delete{
+	/*right: 0px;*/
+	width: 40px;
+	height: 40px;
+	/*border: solid red;*/
+	background-image: url('images/trash.jpg');
+	background-size: 30px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#text-add{
+	margin-bottom: 10px;
+	width: 90vw;
+	height: 50px;
+	margin-top: 10px;
+	font-size: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 50px;
+}
+
+.error::placeholder{
+	color: red;
+	opacity: 0.8;
+}
+
+#btn-task{
+	background-color: rgb(0, 179, 255, 0.2);
+	margin: 10px;
+	width: 100px;
+	height: 30px;
+	outline: none;
+	border-radius: 20px;
+	border: solid 1px rgb(0,0,0,0.4);
+	/*background-color: white;*/
+	font-size: 16px;
+	flex: 0 0 90%;
+	/*margin-left: 20px;*/
+	/*margin-right: 200px;*/
+}
+
+#btn-finish{
+	background-color: rgb(0, 186, 55, 0.2);
+	/*position: absolute;*/
+	margin-top: 10px;
+	/*margin-left: 35%;*/
+	/*margin-right: 35%;*/
+	margin-bottom: 10px;
+	bottom: 50px;
+	width: 100px;
+	height: 30px;
+	outline: none;
+	border-radius: 20px;
+	border: solid 1px rgb(0,0,0,0.4);
+	/*background-color: white;*/
+	font-size: 16px;
+	margin-left: 20px;
+	
+}
+
+#btn-cancle{
+	background-color: rgb(186,0,0, 0.2);
+	margin-top: 10px;
+	/*margin-left: 35%;*/
+	/*margin-right: 35%;*/
+	margin-bottom: 10px;
+	bottom: 50px;
+	width: 100px;
+	height: 30px;
+	outline: none;
+	border-radius: 20px;
+	border: solid 1px rgb(0,0,0,0.4);
+	/*background-color: white;*/
+	font-size: 16px;
+	margin-right: 20px;
+}
+
+.cont{
+	/*display: flex;*/
+	position: relative;
+	width: 100%;
+	/*flex-wrap: wrap;*/
+	margin: 0px;
+	padding: 0px;
+}
+
+.add:hover{
+	color: white;
+	background-color: black;
+	/*padding: 10px;*/
+	/*border: white;*/
+}
+
+@media(min-width: 500px){
+	.item{
+		width: 400px;
+	}
+}
+
+
+@media(min-width: 780px){
+	.all{
+		width: 40vw;
+		margin-left: 30vw;
+		margin-right: 30vw;
+	}
+}
